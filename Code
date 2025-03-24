@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+float femaleC;
+float maleC;
+void input();
+void Punnett();
+
+
+
+int main()
+{
+    cout<<" Welcome! This program let's the user enter any color blind genes."<< endl;
+    cout<<" The inputted information is then converted into a Punnett square and"<< endl;
+    cout<<" given genotypes and phenotypes"<<endl;
+    cout<<"                                                                      "<< endl;
+
+
+void input(float femaleC, float maleC);
+    cout<<"\n\n Is the male colorblind or not?\n"<< endl;
+
+    cout<<" Type 1 for normal male or type 2 for colorblind male\n"<< endl;
+    cin>> maleC;
+
+    cout<<"\n\n Is the female colorblind or not?\n" << endl;
+
+    cout<<" Type 1 for normal female or type 2 for colorblind female or type 3 for silent carrier female" << endl;
+    cin>> femaleC;
+
+
+
+void Punnett();
+{
+
+if ( maleC==1 , femaleC==1 )
+
+    cout << "               XB             Y        " << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     XB |     XB XB     |     XB Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     XB |     XB XB     |     XB Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+
+    return 0;
+}
+void Punnett();
+{
+
+if ( maleC==1 , femaleC==2  )
+
+    cout << "               XB             Y        "  << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+
+    return 0;
+}
+}
