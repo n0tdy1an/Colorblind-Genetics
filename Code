@@ -7,32 +7,54 @@ void input();
 void Punnett();
 
 
-
 int main()
 {
-    cout<<" Welcome! This program let's the user enter any color blind genes."<< endl;
-    cout<<" The inputted information is then converted into a Punnett square and"<< endl;
-    cout<<" given genotypes and phenotypes"<<endl;
-    cout<<"                                                                      "<< endl;
+    cout<<"----------------------------------------------------------------------"<< endl;
+    cout<<"| Welcome! This program let's the user enter any color blind genes.  |"<< endl;
+    cout<<"| The inputted information is then converted into a Punnett square   |"<< endl;
+    cout<<"| given genotypes and phenotypes.                                    |"<<endl;
+    cout<<"----------------------------------------------------------------------"<< endl;
+
 
 
 void input(float femaleC, float maleC);
-    cout<<"\n\n Is the male colorblind or not?\n"<< endl;
+
+    cout<<"\n Does the Male have normal vision or is he colorblind?\n"<< endl;
 
     cout<<" Type 1 for normal male or type 2 for colorblind male\n"<< endl;
     cin>> maleC;
+
+    while (cin.fail()){
+
+    {
+        cout << "Sorry. You can only put integers. "<< endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+        cin >> maleC;
+}
 
     cout<<"\n\n Is the female colorblind or not?\n" << endl;
 
     cout<<" Type 1 for normal female or type 2 for colorblind female or type 3 for silent carrier female" << endl;
     cin>> femaleC;
 
+        while (cin.fail())
+
+    {
+        cout << "Sorry. You can only put integers. "<< endl;
+        cin.clear();
+        cin.ignore(10000, '\n');
+        cin >> femaleC;
+}
 
 
 void Punnett();
+
 {
 
 if ( maleC==1 , femaleC==1 )
+
+{
 
     cout << "               XB             Y        " << endl;
     cout << "        --------------------------------" << endl;
@@ -40,13 +62,18 @@ if ( maleC==1 , femaleC==1 )
     cout << "        |---------------|--------------|" << endl;
     cout << "     XB |     XB XB     |     XB Y     |" << endl;
     cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 0%\nNormal Female = 100%\nColorblind Male = 0%\nNormal Male=100%"<< endl;
 
     return 0;
-}
+
+
 void Punnett();
+
 {
 
 if ( maleC==1 , femaleC==2  )
+
+{
 
     cout << "               XB             Y        "  << endl;
     cout << "        --------------------------------" << endl;
@@ -54,7 +81,93 @@ if ( maleC==1 , femaleC==2  )
     cout << "        |---------------|--------------|" << endl;
     cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
     cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 100%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 100%\nNormal Male=0%"<< endl;
+    return 0;
+}
+
+
+void Punnett();
+
+{
+
+if ( maleC==1 , femaleC==3 )
+
+{
+
+    cout << "               XB             Y        "  << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     XB |     XB XB     |     XB Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 0%\nNormal Female = 50%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
 
     return 0;
+}
+
+void Punnett();
+
+{
+
+if ( maleC==2 , femaleC==1 )
+
+{
+
+    cout << "               Xb             Y         "  << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     XB |     XB Xb     |     XB Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     XB |     XB Xb     |     XB Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 100%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 0%\nNormal Male=100%"<< endl;
+
+    return 0;
+}
+
+void Punnett();
+
+{
+
+if ( maleC==2 , femaleC==2 )
+
+{
+
+    cout << "               Xb             Y         "  << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 100%\nNormal Female = 0%\nColorblind Male = 100%\nNormal Male = 0%"<< endl;
+
+    return 0;
+}
+
+void Punnett();
+
+{
+
+if ( maleC==2 , femaleC==3 )
+
+{
+
+    cout << "               Xb             Y         "  << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "     XB |     XB Xb     |     XB Y     |" << endl;
+    cout << "        |---------------|--------------|" << endl;
+    cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
+    cout << "        --------------------------------" << endl;
+    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 50%\nNormal Female = 0%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
+
+    return 0;
+}
+
+}
+}
+}
+}
+}
+}
+}
 }
 }
