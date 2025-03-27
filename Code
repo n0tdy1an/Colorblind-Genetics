@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Declaring the Variables
 float femaleC;
 float maleC;
 void input();
@@ -22,14 +23,16 @@ void Punnett();
 
 
 
+
 //Inputting the information
 void input(float femaleC, float maleC);
 {
 
     cout<<"\n Does the Male have normal vision or is he colorblind?\n"<< endl;
-    cout<<" Type 1 for normal male or type 2 for colorblind male\n"<< endl;
+    cout<<" Press 1 for normal male or Press 2 for colorblind male\n"<< endl;
     cin>> maleC;
 
+{
 
     if (cin.fail() || maleC < 1 || maleC > 2)
 {
@@ -38,23 +41,27 @@ void input(float femaleC, float maleC);
         cin.ignore(10000, '\n');
         cout << "Sorry, That's not valid. Choose the numbers 1 or 2 "<< endl;
         cin >> maleC;
+
 }
 
-    cout<<"\n\n Does the Female have normal vision or is she colorblind?\n" << endl;
-    cout<<" Type 1 for normal female or type 2 for colorblind female or type 3 for silent carrier female" << endl;
-    cin>> femaleC;
-     if (cin.fail() || femaleC < 1 || femaleC > 3){
 
+    cout<<"\n\n Does the female have normal vision, is she colorblind, or is she a silent carrier\n" << endl;
+    cout<<" Press 1 for normal female, Press 2 for colorblind female, or type 3 for silent carrier female\n" << endl;
+    cin>> femaleC;
+
+
+
+    if (cin.fail() || femaleC < 1 || femaleC > 3)
+{
 
         cout << "Sorry, That's not valid. Choose a number between 1 and 3" << endl;
         cin.clear();
         cin.ignore(10000, '\n');
-        cin >> maleC;
+        cin >> femaleC;
+}
 }
 
-}
-
-
+//Displaying Normal Vision male and Normal Vision Female
 void Punnett();
 
 {
@@ -75,12 +82,14 @@ if ( maleC==1) {
 
     return 0;
 }
-    }
+}
+}
+}
 
+
+// Displaying Normal Vision Male and Colorblind female
 void Punnett();
-
 {
-
 if ( maleC==1){
         if(femaleC==2){
 
@@ -96,16 +105,18 @@ if ( maleC==1){
     return 0;
 }
 }
+}
+}
 
-
+// Displaying Normal Vision male and Silent Carrier Female
 void Punnett();
-
 {
 
 if ( maleC==1){
         if(femaleC==3){
 
 {
+
 
     cout << "               XB               Y       "  << endl;
     cout << "        --------------------------------" << endl;
@@ -116,9 +127,14 @@ if ( maleC==1){
     cout << "\n\nSilent Carrier = 50%\nColorblind Female = 0%\nNormal Female = 50%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
 
     return 0;
+
+
+}
+}
 }
 }
 
+//Displaying Colorblind male and Normal Vision Female
 void Punnett();
 
 {
@@ -137,8 +153,15 @@ if ( maleC==2){
     cout << "\n\nSilent Carrier = 100%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 0%\nNormal Male=100%"<< endl;
 
     return 0;
+
+
 }
 }
+}
+}
+
+
+//Displaying Colorblind male and Colorblind female
 
 void Punnett();
 
@@ -160,7 +183,12 @@ if ( maleC==2){
     return 0;
 }
 }
+}
+}
 
+
+
+//Display Colorblind Male and Silent Carrier Female
 void Punnett();
 
 {
@@ -179,15 +207,7 @@ if ( maleC==2){
     cout << "\n\nSilent Carrier = 50%\nColorblind Female = 50%\nNormal Female = 0%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
 
     return 0;
-}
-}
-}
-}
-}
-}
-}
-}
-}
+
 }
 }
 }
