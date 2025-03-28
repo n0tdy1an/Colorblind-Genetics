@@ -65,13 +65,13 @@ void input(float femaleC, float maleC);
 void Punnett();
 
 {
-
 if ( maleC==1) {
     if(femaleC==1){
 
 
 {
 
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               XB               Y       " << endl;
     cout << "        --------------------------------" << endl;
     cout << "     XB |     XB XB     |     XB Y     |" << endl;
@@ -90,11 +90,13 @@ if ( maleC==1) {
 // Displaying Normal Vision Male and Colorblind female
 void Punnett();
 {
+
+
 if ( maleC==1){
         if(femaleC==2){
 
 {
-
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               XB               Y       "  << endl;
     cout << "        --------------------------------" << endl;
     cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
@@ -117,7 +119,7 @@ if ( maleC==1){
 
 {
 
-
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               XB               Y       "  << endl;
     cout << "        --------------------------------" << endl;
     cout << "     XB |     XB XB     |     XB Y     |" << endl;
@@ -143,7 +145,7 @@ if ( maleC==2){
     if(femaleC==1){
 
 {
-
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               Xb               Y       "  << endl;
     cout << "        --------------------------------" << endl;
     cout << "     XB |     XB Xb     |     XB Y     |" << endl;
@@ -171,7 +173,7 @@ if ( maleC==2){
     if (femaleC==2){
 
 {
-
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               Xb               Y       "  << endl;
     cout << "        --------------------------------" << endl;
     cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
@@ -197,7 +199,7 @@ if ( maleC==2){
     if(femaleC==3){
 
 {
-
+    cout << "\n\nNormal Vision = XB  ||  Colorblind = Xb\n\n" << endl;
     cout << "               Xb               Y       "  << endl;
     cout << "        --------------------------------" << endl;
     cout << "     XB |     XB Xb     |     XB Y     |" << endl;
