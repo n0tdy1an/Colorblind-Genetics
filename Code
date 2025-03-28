@@ -2,15 +2,18 @@
 using namespace std;
 
 //Declaring the Variables
-float femaleC;
-float maleC;
+
 void input();
 void Punnett();
 
 
-int main()
+int main(){
+
+float femaleC;
+float maleC;
+
 //Welcoming the User
-{
+
     cout<<"----------------------------------------------------------------------"<< endl;
     cout<<"| Welcome! This program let's the user enter any color blind genes.  |"<< endl;
     cout<<"| The inputted information is then converted into a Punnett square   |"<< endl;
