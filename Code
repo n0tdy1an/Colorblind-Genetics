@@ -81,7 +81,7 @@ if ( maleC==1) {
     cout << "        |---------------|--------------|" << endl;
     cout << "     XB |     XB XB     |     XB Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 0%\nNormal Female = 100%\nColorblind Male = 0%\nNormal Male=100%"<< endl;
+    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 0%\nNormal Female = 50%\nColorblind Male = 0%\nNormal Male=50%"<< endl;
 
     return 0;
 }
@@ -106,7 +106,7 @@ if ( maleC==1){
     cout << "        |---------------|--------------|" << endl;
     cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 100%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 100%\nNormal Male=0%"<< endl;
+    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 50%\nNormal Male=0%"<< endl;
     return 0;
 }
 }
@@ -129,7 +129,7 @@ if ( maleC==1){
     cout << "        |---------------|--------------|" << endl;
     cout << "     Xb |     XB Xb     |     Xb Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 0%\nNormal Female = 50%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
+    cout << "\n\nSilent Carrier = 25%\nColorblind Female = 0%\nNormal Female = 25%\nColorblind Male = 25%\nNormal Male=25%"<< endl;
 
     return 0;
 
@@ -155,7 +155,7 @@ if ( maleC==2){
     cout << "        |---------------|--------------|" << endl;
     cout << "     XB |     XB Xb     |     XB Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 100%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 0%\nNormal Male=100%"<< endl;
+    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 0%\nNormal Female = 0%\nColorblind Male = 0%\nNormal Male=50%"<< endl;
 
     return 0;
 
@@ -183,7 +183,7 @@ if ( maleC==2){
     cout << "        |---------------|--------------|" << endl;
     cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 100%\nNormal Female = 0%\nColorblind Male = 100%\nNormal Male = 0%"<< endl;
+    cout << "\n\nSilent Carrier = 0%\nColorblind Female = 50%\nNormal Female = 0%\nColorblind Male = 50%\nNormal Male = 0%"<< endl;
 
     return 0;
 }
@@ -209,7 +209,7 @@ if ( maleC==2){
     cout << "        |---------------|--------------|" << endl;
     cout << "     Xb |     Xb Xb     |     Xb Y     |" << endl;
     cout << "        --------------------------------" << endl;
-    cout << "\n\nSilent Carrier = 50%\nColorblind Female = 50%\nNormal Female = 0%\nColorblind Male = 50%\nNormal Male=50%"<< endl;
+    cout << "\n\nSilent Carrier = 25%\nColorblind Female = 25%\nNormal Female = 0%\nColorblind Male = 25%\nNormal Male=25%"<< endl;
 
     return 0;
 
